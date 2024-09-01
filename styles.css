@@ -831,29 +831,9 @@ p {
     }
 }
 
-.contact-info {
-    font-size: 1.2rem;
-    margin: 5px 0;
-}
-
-/* Specific styling for email */
-.email {
-    color: #d9d3bf; /* Gold color for email */
-    font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    text-decoration: underline;
-    font-weight: 700;
-        text-shadow: 0 0 0.15em #FFD700;
-}
-
-/* Specific styling for phone */
-.phone {
-    color: #d9d3bf; /* Light Gold color for phone */
-    font-family: 'Courier New', monospace;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 700;
-        text-shadow: 0 0 0.15em #FFD700;
+.social-media-container1 {
+    justify-content: center;
+    margin-top: 20px;
 }
 
 /* Contact Section */
