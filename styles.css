@@ -816,7 +816,7 @@ p {
 /* Form Area Styles */
 .contact-from .form-area {      
     h2 {
-        font-weight: 500;
+        font-weight: 250;
         font-size: 28px;
         color: #4F4F4F;
         text-align: center;
@@ -831,10 +831,7 @@ p {
     }
 }
 
-.social-media-container1 {
-    justify-content: center;
-    margin-top: 20px;
-}
+
 
 /* Contact Section */
 .contact-from .contact {
@@ -945,7 +942,7 @@ p {
 
 .form-area {
     width: 50%;
-    padding: 20px;
+    padding: 0px;
     z-index: 100;
 }
 
@@ -1046,7 +1043,7 @@ p {
 /* Contact Form */
 .form {
     width: 50%;
-    padding: 20px;
+    padding: 0px;
 }
 
 .input-group {
@@ -1145,4 +1142,16 @@ p {
         height: 30px; /* Adjust size for mobile */
     }
     
+}
+
+@media screen and (max-width: 480px) {
+    .form-area,
+    .form {
+        width: 100%;
+    }
+}
+
+.social-media-container1 {
+    justify-content: center;
+    margin-top: 20px;
 }
