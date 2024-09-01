@@ -43,8 +43,72 @@ body {
     transform: translate(-50%, -50%);
     cursor: move;
     transition: transform 0.3s ease-in-out;
+    width: 50%; /* Adjust the width for larger screens */
 }
 
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .header-box {
+        width: 80%; /* Adjust the width for smaller screens */
+        top: 40%; /* Adjust top position for better visibility on mobile */
+        left: 50%; /* Center horizontally */
+        padding: 15px;
+        transform: translate(-50%, -20%);
+    }
+
+    .image-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .first-name, .last-name {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .role {
+        font-size: 1.5rem; /* Adjust role font size */
+    }
+
+    #dynamic-text {
+        font-size: 1.5rem; /* Adjust dynamic text font size */
+    }
+
+    .description {
+        font-size: 1rem; /* Adjust description font size */
+        text-align: center; /* Center the text on mobile */
+    }
+}
+/* Very small screens (like smartphones in portrait mode) */
+@media (max-width: 480px) {
+    .header-box {
+        width: 90%; /* Further adjust the width for very small screens */
+        top: 35%; /* Adjust top position */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -15%);
+    }
+
+    .image-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .first-name, .last-name {
+        font-size: 1.2rem;
+    }
+
+    .role {
+        font-size: 1.2rem;
+    }
+
+    #dynamic-text {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
 
 .image-container {
     border-radius: 50%;
@@ -61,7 +125,7 @@ body {
 }
 
 .text-container {
-    color: #F5F5DC; /* Light Gold */
+    color: #ffffff; /* Light Gold */
 }
 
 .first-name {
@@ -78,7 +142,7 @@ body {
 
 .role {
     font-size: 2rem;
-    color: #000000; /* Black */
+    color: #F5F5DC; /* Black */
     font-weight: bold;
     margin: 20px 0;
 }
@@ -94,6 +158,7 @@ body {
     font-size: 1.2rem;
     color: #F5F5DC; /* Light Gold */
 }
+
 
 /* Social Media Links */
 .social-media-container {
@@ -147,7 +212,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: #1a1a1a00; /* Dark Grey */
+    background-color: #ff000000; /* Dark Grey */
     z-index: 2;
     border-radius: 0 0 0 10px;
 }
@@ -192,7 +257,7 @@ body {
 .navbar .links li a img {
     width: 15px;
     height: 15px;
-    background-color: #ffd90000;
+    background-color: #ffffff00;
     /* Makes SVG icons white */
 }
 
@@ -329,7 +394,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color: rgba(255, 215, 0, 1.00);
     border: none;
     color: #ffffff;
     font-family: monospace;
@@ -490,7 +555,7 @@ body {
         opacity: 0;
     }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 1252px) {
     .carousel .list .item .content{
         padding-right: 0;
     }
@@ -499,8 +564,14 @@ body {
     }
 }
 
-
-/* Character Sheet Styles */
+@media screen and (max-width: 480px) {
+    .carousel .list .item .content{
+        padding-right: 0;
+    }
+    .carousel .list .item .content .title{
+        font-size: 30px;
+    }
+}
 
 /* Home Section */
 .home-section {
@@ -537,6 +608,20 @@ body {
     min-height: 100vh; /* Ensures the Projects section takes full viewport height */
     margin: 0; /* Remove any default margin */
     padding: 2px 0; /* Adjust padding for visual space */
+    overflow: hidden; /* Ensure no overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Example background color */
+    color: #FFD700; /* Gold text color */
+}
+
+.contact-section {
+    width: auto; /* Full viewport width */
+    min-height: 60vh; /* Ensures the Projects section takes full viewport height */
+    margin: 0; /* Remove any default margin */
+    padding: 2px; /* Adjust padding for visual space */
     overflow: hidden; /* Ensure no overflow */
     display: flex;
     flex-direction: column;
@@ -744,6 +829,31 @@ p {
         margin: auto;
         text-align: center;
     }
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Specific styling for email */
+.email {
+    color: #d9d3bf; /* Gold color for email */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-decoration: underline;
+    font-weight: 700;
+        text-shadow: 0 0 0.15em #FFD700;
+}
+
+/* Specific styling for phone */
+.phone {
+    color: #d9d3bf; /* Light Gold color for phone */
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+        text-shadow: 0 0 0.15em #FFD700;
 }
 
 /* Contact Section */
